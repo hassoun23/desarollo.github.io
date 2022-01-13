@@ -67,7 +67,7 @@
   margin-right: 5rem;
   margin-bottom: 5rem;
   position: absolute;
-  top: 10rem;
+  top: 18rem;
   font-family: "Montserrat";
   font-weight: normal;
   font-size: 1.5rem;
@@ -81,6 +81,15 @@
   margin-left: 20rem;
   margin-right: 10rem;
   margin-top: 10rem;
+}
+
+.quienes__somos {
+  font-family: "Montserrat";
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 3rem;
+  text-align: center;
+  margin: 4rem;
 }
 
 @media screen and (max-width: 425px) {
