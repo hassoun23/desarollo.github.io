@@ -23,7 +23,7 @@
     height: 30rem;
     background-position: center;
     background-size: cover;
-
+    
 }
 
 .marcas{
@@ -31,3 +31,44 @@
   
     
 }
+
+
+
+.card__lumilagro{
+    height: 80%;
+
+    &--img{
+        display: flex;
+        position: relative;
+        top: 5rem;
+        align-content: center;
+    }
+
+}
+
+
+
+.titulo__slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    &--primero{
+        
+        position: absolute; 
+        bottom: 8rem;
+        font-family: $fontfamily;
+        font-weight: bold;
+
+    }
+    &--segundo{
+        @extend .titulo__slide--primero;
+    }
+
+    &--tercero{
+        
+        @extend .titulo__slide--primero;
+    }
+}
+

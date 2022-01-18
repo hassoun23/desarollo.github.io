@@ -52,6 +52,9 @@
           </nav>
     </header>
     <main>
+                
+      <!------ COMIENZO SLIDER IMAGENES HEADER------->
+      
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -59,24 +62,26 @@
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
               </div>
               <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="3000" style="background-image: url(assets/slider1.jpg);">
+                <div class="carousel-item active" data-bs-interval="5000" style="background-image: url(assets/slider1.jpg);">
+                  <div class="container">
+                    
+                    <div class="carousel-caption titulo__slide">
+                      <h5 class="display-1 titulo__slide--primero">Mayorista de Artículos de Kioscos y varios</h5>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000" style="background-image: url(assets/slider2.jpg);">
                   
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5 class="titulo__slide--primero">Mayorista de Artículos para Kioscos</h5>
+                  <div class="carousel-caption titulo__slide">
+                    <h5 class="display-1 titulo__slide--segundo">Entregamos a todo el País</h5>
                     
                   </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="3000" style="background-image: url(assets/slider2.jpg);">
+                <div class="carousel-item" data-bs-interval="4000" style="background-image: url(assets/slider3.jpg);">
                   
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5 class="titulo__slide--segundo">Entregamos a todo el País</h5>
-                    
-                  </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="3000" style="background-image: url(assets/slider3.jpg);">
-                  
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5 class="titulo__slide--tercero">Los Mejores Precios</h5>
+                  <div class="carousel-caption titulo__slide">
+                    <h5 class="display-1 titulo__slide--tercero">Los Mejores Precios</h5>
                    
                   </div>
                 </div>
@@ -91,9 +96,9 @@
               </button>
             </div>
         </div>
+                   <!------ FIN SLIDE IMAGENES HEADER ------->
 
-
-        <!-- seccion marcas -->
+        <!-------- COMIENZO SECCION MARCAS ------>
     <div class="container mt-5 pt-5 pb-2 text-center">
       
     </div>
@@ -101,9 +106,9 @@
     <div class="carousel slide marcas" id="demo" data-bs-ride="carousel">
     
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active bg-dark"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class="bg-dark"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="2" class="bg-dark"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active bg-dark "></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class="bg-dark "></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2" class="bg-dark "></button>
         </div>
     
         <div class="carousel-inner">
@@ -153,11 +158,11 @@
                 <div class="container mt-4 d-block w-100">
                     <div class="row">
                         <div class="col-md-3 mt-lg-0">
-                            <div class="card">
-                                <img class="card-img-bottom p-1" src="assets/lumilagro.png">
-                                <div class="card-body">
+                            <div class="card card__lumilagro">
+                                <img class="card-img card__lumilagro--img" src="assets/lumilagro.png">
+                                
                                     
-                                </div>
+                                
                             </div>
                         </div>
                         <div class="col-md-3 mt-lg-0 mt-3">
@@ -201,11 +206,9 @@
                                 </div>
                             </div>
                             <div class="col-md-3 mt-lg-0 mt-3">
-                                <div class="card">
-                                    <img class="card-img-bottom" src="assets/lumilagro.png">
-                                    <div class="card-body">
-                                     
-                                    </div>
+                                <div class="card card__lumilagro">
+                                    <img class="card-img-top card__lumilagro--img" src="assets/lumilagro.png">
+                                   
                                 </div>
                             </div>
                             <div class="col-md-3 mt-lg-0 mt-3">
@@ -230,16 +233,17 @@
              </div>
         </div>
     
-        <button class="carousel-control-prev d-flex justify-content-end" id="btnslidone" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <button class="carousel-control-prev d-flex justify-content-start btn__marcas--prev" id="btnslidone" type="button" data-bs-target="#demo" data-bs-slide="prev">
             <span class="carousel-control-prev-icon bg-dark" id="mostslid"></span>
         </button>
-        <button class="carousel-control-next d-flex justify-content-start" id="btnslidtwo" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <button class="carousel-control-next d-flex justify-content-end btn__marcas--next" id="btnslidtwo" type="button" data-bs-target="#demo" data-bs-slide="next">
             <span class="carousel-control-next-icon bg-dark" id="mostslid"></span>
         </button>
     
     </div>
+             <!-------FIN SECCION MARCAS------->
 
-        <!--seccion productos destacados-->
+        <!-----COMIENZO PRODUCTOS DESTACACOS------>
 
             <h2 class="productos__destacados">PRODUCTOS DESTACADOS</h2>
 
@@ -329,7 +333,7 @@
             </div>
         </div>
         
-      
+      <!--------- FIN PRODUCTOS DESTACADOS ------->
                   
     </main>
     <footer class="footer">

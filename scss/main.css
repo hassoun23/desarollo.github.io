@@ -28,6 +28,42 @@
   background-color: #ffbf75;
 }
 
+.card__lumilagro {
+  height: 80%;
+}
+
+.card__lumilagro--img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: 5rem;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.titulo__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.titulo__slide--primero, .titulo__slide--segundo, .titulo__slide--tercero {
+  position: absolute;
+  bottom: 8rem;
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
 .productos__destacados {
   text-align: center;
   font-size: 3rem;
@@ -36,6 +72,7 @@
 }
 
 .card {
+  height: 80%;
   margin-top: 3rem;
   margin-bottom: 2rem;
   -webkit-transform: translateY(0px);
@@ -49,6 +86,10 @@
           box-shadow: 6px 6px 40px 10px rgba(0, 0, 0, 0.3);
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
+}
+
+.card-body {
+  overflow: hidden;
 }
 
 .quien__imagen {
@@ -94,7 +135,7 @@
 
 @media screen and (max-width: 425px) {
   .quien__imagen {
-    margin-left: 9rem;
+    margin-left: 6rem;
   }
   .quienes__img {
     width: 200px;
@@ -102,13 +143,14 @@
   .quienes__somos--derecha {
     margin-left: 1rem;
     margin-top: 20rem;
+    margin-bottom: 15rem;
     margin-right: 2rem;
     display: block;
     text-align: center;
   }
   .quienes__somos--abajo {
     margin-left: 1rem;
-    margin-top: 60rem;
+    margin-top: 63rem;
     margin-right: 2rem;
     text-align: center;
   }
