@@ -102,12 +102,6 @@
   overflow: hidden;
 }
 
-.card__personal {
-  height: 42%;
-  background-color: rgba(73, 213, 255, 0.253);
-  margin-left: 15rem;
-}
-
 .quien__imagen {
   width: 10px;
   margin-left: 20rem;
