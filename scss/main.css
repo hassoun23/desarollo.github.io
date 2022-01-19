@@ -122,17 +122,17 @@
   font-family: "Montserrat";
   font-weight: normal;
   font-size: 1.5rem;
-  line-height: 22px;
+  line-height: 32px;
   color: #575454;
 }
 
 .quienes__somos--abajo {
   font-family: "Montserrat";
   font-size: 1.5rem;
-  line-height: 22px;
+  line-height: 32px;
   margin-left: 20rem;
   margin-right: 10rem;
-  margin-top: 10rem;
+  margin-top: 3rem;
   color: #575454;
 }
 
