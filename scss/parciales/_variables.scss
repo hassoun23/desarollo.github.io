@@ -2,3 +2,13 @@
 
 $fontfamily: "Montserrat";
 $colormarcas:#ffbf75;
+
+@mixin font($font,$size,$fontweight) {
+    font-family:$font;
+    font-size: $size;
+    font-weight: $fontweight;
+     
+}
+
+
+$colortexto: ("productos":black,"quienessomos":rgb(87, 84, 84),"titulos":rgb(189, 177, 14));

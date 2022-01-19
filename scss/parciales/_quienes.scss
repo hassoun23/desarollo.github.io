@@ -21,11 +21,12 @@
     margin-right: 5rem;
     margin-bottom: 5rem;
     position: absolute;
-    top: 18rem;
+    top: 23rem;
     font-family: $fontfamily;
     font-weight: normal;
     font-size: 1.5rem;
     line-height: 22px;
+    color: map-get($colortexto , "quienessomos" );
     
 }
 
