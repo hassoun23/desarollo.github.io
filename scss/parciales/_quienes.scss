@@ -53,6 +53,38 @@
 }
 
 
+.imagen__personal{
+  width: 100px;
+  height: 100px;
+  margin-bottom: 5rem;
+  
+  
+}
+
+.nombre__personal{
+ padding: 1.5rem;
+ margin-left: 1rem;
+ margin-bottom: 2rem;
+
+ &--nombre{
+   margin-bottom: 0.3rem;
+   @include font(Montserrat,1.5rem,bold);
+ }
+
+ &--cargo{
+   margin-top: rem;
+   @include font(Montserrat,1.5rem,normal);
+ }
+}
+
+
+.card__personal{
+  height: 42%;
+  background-color: rgba(252, 175, 32, 0.253);
+  margin-left: 15rem;
+}
+
+
 @media screen and (max-width:425px){
 
     .quien__imagen {

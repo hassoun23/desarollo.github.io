@@ -102,6 +102,12 @@
   overflow: hidden;
 }
 
+.card__personal {
+  height: 42%;
+  background-color: rgba(73, 213, 255, 0.253);
+  margin-left: 15rem;
+}
+
 .quien__imagen {
   width: 10px;
   margin-left: 20rem;
@@ -143,6 +149,38 @@
   font-size: 3rem;
   text-align: center;
   margin: 4rem;
+}
+
+.imagen__personal {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 5rem;
+}
+
+.nombre__personal {
+  padding: 1.5rem;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.nombre__personal--nombre {
+  margin-bottom: 0.3rem;
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nombre__personal--cargo {
+  margin-top: rem;
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.card__personal {
+  height: 42%;
+  background-color: rgba(252, 175, 32, 0.253);
+  margin-left: 15rem;
 }
 
 @media screen and (max-width: 425px) {
