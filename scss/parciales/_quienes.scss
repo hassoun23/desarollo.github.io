@@ -65,6 +65,7 @@
  padding: 1.5rem;
  margin-left: 1rem;
  margin-bottom: 2rem;
+ flex-direction: row;
 
  &--nombre{
    margin-bottom: 0.3rem;
@@ -82,10 +83,15 @@
   height: 42%;
   background-color: rgba(252, 175, 32, 0.253);
   margin-left: 15rem;
+  flex-direction: row;
 }
 
 .row__personal{
   margin-bottom: 0;
+}
+
+.contenedor__personal{
+  flex-direction: row;
 }
 
 @media screen and (max-width:425px){
@@ -110,15 +116,15 @@
         margin-right: 2rem;
         text-align: center;
       }
-    }
+    
 
     .contenedor__personal{
-     flex-direction: column;
+      flex-direction: column;
     }
 
     .card__personal{
       height: 70%;
-      flex-direction: column;
+      
       margin-left: 0;
      
     }
@@ -131,10 +137,10 @@
    }
 
    .nombre__personal{
-
-    flex-direction: column;
-    padding: 1.5rem;
-    margin-left: 1rem;
-    margin-bottom: 2rem;
-   
+     
+     padding: 1.5rem;
+     margin-left: 1rem;
+     margin-bottom: 2rem;
    }
+
+  }
