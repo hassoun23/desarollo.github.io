@@ -204,6 +204,36 @@
   }
 }
 
+.contenedor__personal {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card__personal {
+  height: 70%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 0;
+}
+
+.personal {
+  display: inline-block;
+}
+
+.nombre__personal {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.5rem;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+
 .page-breadcrumb {
   background-color: #f1f1f1;
   padding: 0.5rem;

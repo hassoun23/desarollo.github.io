@@ -111,3 +111,30 @@
         text-align: center;
       }
     }
+
+    .contenedor__personal{
+     flex-direction: column;
+    }
+
+    .card__personal{
+      height: 70%;
+      flex-direction: column;
+      margin-left: 0;
+     
+    }
+
+   .personal{
+     display: inline-block;
+
+     
+
+   }
+
+   .nombre__personal{
+
+    flex-direction: column;
+    padding: 1.5rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+   
+   }
