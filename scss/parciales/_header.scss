@@ -48,12 +48,15 @@
 
 .card__lumilagro{
     height: 80%;
+    
+    
 
     &--img{
         display: flex;
+        
         position: relative;
         top: 5rem;
-        align-content: center;
+        
     }
 
 }
@@ -87,3 +90,23 @@
     }
 }
 
+
+@media screen and (max-width:425px){
+
+    .card__lumilagro{
+        height: 90% ;
+        margin-bottom: 14.5rem !important;
+        margin-top: 1rem;
+        
+    
+        &--img{
+            display: flex;
+            
+            position: relative;
+            top: 5rem;
+            
+        }
+    
+    }
+
+}

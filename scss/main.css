@@ -44,8 +44,6 @@
   display: flex;
   position: relative;
   top: 5rem;
-  -ms-flex-line-pack: center;
-      align-content: center;
 }
 
 .titulo__slide {
@@ -69,6 +67,21 @@
   font-family: "Montserrat";
   font-weight: bold;
   color: #eedf0f;
+}
+
+@media screen and (max-width: 425px) {
+  .card__lumilagro {
+    height: 90%;
+    margin-bottom: 14.5rem !important;
+    margin-top: 1rem;
+  }
+  .card__lumilagro--img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    top: 5rem;
+  }
 }
 
 .productos__destacados {
