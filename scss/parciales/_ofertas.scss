@@ -35,3 +35,40 @@
     
 
 }
+
+
+
+@media screen and (max-width:425px){
+    .portada__ofertas{
+        background-color: #f0f0f0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+    
+    
+    .portadaimg__ofertas{
+        width: 250px;
+    }
+    
+    .title__ofertas--primero{
+        position: relative;
+        top: 2rem;
+        @include font(Montserrat,2rem,bold);
+        text-align: center;
+    
+        
+    }
+    
+    .title__ofertas--segundo{
+        position: relative;
+        top: 2rem;
+        margin-bottom: 3rem;
+        text-align: center;
+        @include font(Montserrat,1rem,light);
+        
+    
+    }
+
+}
