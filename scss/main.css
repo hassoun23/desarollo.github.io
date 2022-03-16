@@ -8,7 +8,15 @@
   font-weight: bold;
   font-size: 1.2rem;
 }
+.contenedorcarrito{
+  margin-left: 10rem;
+  width: 49.75px;
+}
 
+.fa-shopping-cart{
+  color: #525558;
+  font-size: 2rem;
+}
 .dropdown-item {
   color: white;
 }
