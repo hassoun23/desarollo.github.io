@@ -8,13 +8,18 @@ const productos = [
 ];
 
 
-const carrito = [];
+let carrito = [];
 
 
 const contenedorTienda = document.getElementById('contenedorTienda');
 const contenedorCarrito = document.getElementById('contenedorCarrito');
-
-const botonCarrito = document.getElementById('btnCarrito');
+const botonCarrito = document.getElementById('mostrarCarrito');
+const badgeCarrito = document.getElementById('badgeCarrito');
+const divisa = '$';
+const domItems = document.getElementById('items');
+const domCarrito = document.getElementById('carrito');
+const domTotal = document.getElementById('total');
+const domBotonVaciar = document.getElementById('boton-vaciar');
 
 
 
@@ -39,12 +44,17 @@ descripProducto.className = 'card-text';       // clase para descripcion product
 precioProducto.className = 'preciProducto';    // clase precio producto
 botonComprar.className = 'btn btn-primary';    //clase boton carrito bootstrap
 
-
+// img card
 imgProducto.src = producto.img;
+//titulo card
 tituloProducto.innerHTML = `${producto.producto}`;
+//descripcion card
 descripProducto.innerHTML = `${producto.tipo}`;
-precioProducto.innerHTML = `${producto.precio}`;
-botonComprar.innerHTML = `Agregar Carrito`;
+// precio cards
+precioProducto.innerHTML = `$ ${producto.precio}`;
+//botones
+botonComprar.textContent = `Agregar Carrito`;
+// boton coincida con producto id
 botonComprar.id = producto.id;
 
 
@@ -54,11 +64,12 @@ divProducto.append(imgProducto,bodyProducto);
 bodyProducto.append(tituloProducto,descripProducto,precioProducto,botonComprar);
 
 
-
+// eventro click agregar al carrito y se guarda en localstorage
 botonComprar.onclick = () => {
   const productoComprado = productos.find(producto => producto.id === botonComprar.id);
   carrito.push({ nombre: productoComprado.tipo, precio: productoComprado.precio })
-  localStorage.setItem("carrito",JSON.stringify(carrito))
+  localStorage.setItem("carrito",JSON.stringify(carrito));
+  badgeCarrito.innerHTML = carrito.length;
 
   console.log(carrito);
 }
@@ -68,19 +79,43 @@ botonComprar.onclick = () => {
 }
 
 
-
-const mostrarCarrito = () => {
-  const carrito = JSON.parse(localStorage.getItem("carrito"))
-
-  for (const producto of carrito) {
-    const nombreProducto = `<h4>Producto : ${producto.tipo}</h4>`;
-    const precioProducto = `<h4>Precio : ${producto.precio}</h4>`;
-    contenedorCarrito.innerHTML += nombreProducto;
-    contenedorCarrito.innerHTML += precioProducto;
+function renderizarCarrito() {
+  // Vaciamos todo el html
+  domCarrito.textContent = '';
+  const carrito = JSON.parse(localStorage.getItem ("carrito"));
+  for(const producto of carrito) {
+    const nodoProductos= document.createElement ('li');
+    nodoProductos.className = 'list-group-item', 'text-right', 'mx-2'
+    nodoProductos.append = `${numeroUnidadesCarrito} x ${producto[0].producto} - ${producto[0].precio} ${divisa}`;
+   };
+   
+   domTotal.innerHTML = sumaTotal();
   }
 
+
+  function vaciarCarrito() {
+    // Limpiamos los productos guardados
+    carrito = [];
+    // Renderizamos los cambios
+    renderizarCarrito();
+}
+
+
+const sumaTotal = () =>{
+
   const total = carrito.reduce((accumulador, producto) => accumulador + producto.precio, 0);
-  contenedorCarrito.append(`Total Compra :  ${total}`); };
+  contenedorCarrito.append(`Total Compra :  ${total}`);
+  
+};
 
 
-  botonCarrito.onclick = mostrarCarrito;
+
+
+
+
+
+
+
+
+
+
