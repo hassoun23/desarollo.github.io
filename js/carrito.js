@@ -93,14 +93,6 @@ function renderizarCarrito() {
   }
 
 
-  function vaciarCarrito() {
-    // Limpiamos los productos guardados
-    carrito = [];
-    // Renderizamos los cambios
-    renderizarCarrito();
-}
-
-
 const sumaTotal = () =>{
 
   const total = carrito.reduce((accumulador, producto) => accumulador + producto.precio, 0);
